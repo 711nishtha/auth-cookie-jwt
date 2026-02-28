@@ -1,0 +1,22 @@
+# Web framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# ORM + database
+sqlalchemy>=2.0.0
+
+# Password hashing — argon2id, winner of Password Hashing Competition
+# Memory-hard: resistant to GPU-parallel brute force
+argon2-cffi>=23.1.0
+
+# JWT signing/verification — RS256 (asymmetric)
+python-jose[cryptography]>=3.3.0
+
+# RSA key generation (used by security.py for RS256)
+cryptography>=42.0.0
+
+# Request/response validation
+pydantic[email]>=2.0.0
+
+# Required by FastAPI for Form(...) parsing
+python-multipart>=0.0.9
